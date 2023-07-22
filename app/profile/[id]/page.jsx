@@ -51,9 +51,9 @@ const UserProfile = () => {
   return (
     <Profile
       name={name ? name + "'s" : ""}
-      desc={`Welcome to ${
+      desc={`Welcome to ${name ? name + "'s" : ""} profile page. Explore ${
         name ? name + "'s" : ""
-      } profile page. Explore cryptonew's exceptional prompts and be inspired by the power of their imagination.`}
+      } exceptional prompts and be inspired by the power of their imagination.`}
       data={posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
